@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Pendaftaran Asrama Putra</title>
+    <style>
+        body {
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            /* Warna latar belakang */
+            color: #fff;
+            /* Warna teks */
+            font-size: 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            /* Animasi perubahan warna dan transformasi */
+        }
+
+        /* Efek hover saat kursor diarahkan ke tombol kembali */
+        .back-button:hover {
+            background-color: #2980b9;
+            /* Warna latar belakang saat hover */
+            transform: scale(1.1);
+            /* Transformasi saat hover */
+        }
+
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .back-link .arrow {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <a class="back-button" href="projek saya.html">Kembali</a>
+        <h1>Form Pendaftaran Asrama Putra</h1>
+        <form name="registrationForm" action="submit.php" onsubmit="return validateForm()" method="post"
+            enctype="multipart/form-data">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="nim">NIM:</label>
+            <input type="text" id="nim" name="nim" required>
+
+            <label for="department">Jurusan:</label>
+            <input type="text" id="department" name="department" required>
+
+            <label for="address">Alamat:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="birthDate">Tanggal Lahir:</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+
+            <label for="photo">Foto (jpg, png, atau gif):</label>
+            <input type="file" id="photo" name="photo" accept="image/jpeg, image/png, image/gif" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

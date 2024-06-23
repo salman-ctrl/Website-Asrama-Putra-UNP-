@@ -1,0 +1,26 @@
+/* Styling untuk navbar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Styling untuk landing page */
+#landing {
+    background-image: url(foto-saya.jpg);
+    background-size: cover;
+    background-position

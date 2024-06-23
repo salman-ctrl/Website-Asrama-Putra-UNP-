@@ -1,0 +1,1174 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+link {
+    none
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo2 {
+    width: 50px;
+    /* Sesuaikan ukuran logo */
+    height: 50px;
+    /* Sesuaikan ukuran logo */
+}
+
+.title {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    /* Jarak dari bawah */
+    right: 20px;
+    /* Jarak dari kanan */
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+}
+
+.oke {
+    display: flex;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #002358;
+    width: 100%;
+    z-index: 100;
+    color: white;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+
+
+}
+
+
+
+.oke ul li {
+    margin-top: 10px;
+    list-style: none;
+    display: inline-block;
+    float: right;
+    margin-right: 5px;
+    font-size: 20px;
+    color: rgb(7, 7, 103);
+    /* Mengatur border dengan ketebalan 1px dan warna hitam */
+    /* Mengatur warna latar belakang */
+    padding: 1px 7px;
+    border-radius: 5px;
+}
+
+.oke ul li a:hover {
+    color: orange;
+
+
+}
+
+.oke ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.oke ul li .child {
+    display: none;
+}
+
+.oke ul li:hover .child {
+    display: block;
+    background: #021930;
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.oke ul li:hover .child li {
+    display: block;
+    float: none;
+    text-align: center;
+}
+
+.oke ul li:hover .child li a {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.oke ul li:hover .child li a:hover {
+
+    transition: 0.5s;
+}
+
+.logo {
+    margin-right: 540px;
+    margin-top: 1px;
+    margin-left: 90px;
+    width: 90px;
+    height: 90px;
+    padding: 0px;
+    position: relative;
+}
+
+h6 {
+    position: absolute;
+    top: 40%;
+    right: 850px;
+    transform: translateY(-50%);
+    margin: 0;
+    border-bottom: 2px solid white;
+    font-size: 25px;
+}
+
+
+h5 {
+    position: absolute;
+    top: 65%;
+    right: 900px;
+    transform: translateY(-50%);
+    margin: 0;
+    font-size: 25px;
+}
+
+.heading {
+    color: khaki;
+    position: relative;
+    text-align: left;
+    margin-top: 300px;
+    margin-left: 100px;
+    font-size: 25px;
+}
+
+.heading:hover {
+    transition: 0.5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero h3 {
+    margin-right: 400px;
+    margin-left: 95px;
+    font-size: 45px;
+}
+
+.hero h3 {
+    opacity: 0;
+    filter: blur(10px);
+    animation: fade-in 1s forwards;
+    color: orange;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.teks {
+    color: white;
+    font-size: 22px;
+    margin-left: 100px;
+    margin-right: 700px;
+    margin-top: 20px;
+}
+
+/* CSS untuk animasi tulisan muncul dari kiri */
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* CSS untuk animasi tulisan muncul dari kanan */
+@keyframes slide-in-right {
+    0% {
+        transform: translatey(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+
+/* CSS untuk mengatur tampilan awal tulisan */
+.heading .teks {
+    opacity: 0;
+}
+
+/* CSS untuk menerapkan animasi pada tulisan */
+.heading {
+    animation: slide-in-left 1s ease-out forwards;
+}
+
+.teks {
+    animation: slide-in-right 1s ease-out forwards;
+}
+
+.btn-conteiner {
+    display: flex;
+    justify-content: center;
+    --color-text: #ffffff;
+    --color-background: orange;
+    --color-outline: #ff145b80;
+    --color-shadow: #00000080;
+}
+
+.btn-content {
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--color-text);
+    background: var(--color-background);
+    transition: 1s;
+    border-radius: 100px;
+    box-shadow: 0 0 0.2em 0 var(--color-background);
+}
+
+.btn-content:hover,
+.btn-content:focus {
+    transition: 0.5s;
+    -webkit-animation: btn-content 1s;
+    animation: btn-content 1s;
+    outline: 0.1em solid transparent;
+    outline-offset: 0.2em;
+    box-shadow: 0 0 0.4em 0 var(--color-background);
+}
+
+.btn-content .icon-arrow {
+    transition: 0.5s;
+    margin-right: 0px;
+    transform: scale(0.6);
+}
+
+.btn-content:hover .icon-arrow {
+    transition: 0.5s;
+    margin-right: 25px;
+}
+
+.icon-arrow {
+    width: 20px;
+    margin-left: 15px;
+    position: relative;
+    top: 6%;
+}
+
+/* SVG */
+#arrow-icon-one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+#arrow-icon-two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.btn-content:hover #arrow-icon-three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.btn-content:hover #arrow-icon-one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.btn-content:hover #arrow-icon-two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+
+    50% {
+        fill: var(--color-background);
+    }
+
+    100% {
+        fill: white;
+    }
+}
+
+/* Button animations */
+@-webkit-keyframes btn-content {
+    0% {
+        outline: 0.2em solid var(--color-background);
+        outline-offset: 0;
+    }
+}
+
+@keyframes btn-content {
+    0% {
+        outline: 0.2em solid var(--color-background);
+        outline-offset: 0;
+    }
+}
+
+.seksion {
+    margin-left: 60px;
+    margin-top: 80px;
+}
+
+.hero {
+    font-size: 2em;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    /* Mengubah nilai menjadi 100vw */
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bck {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000;
+}
+
+.clm1 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.grid-hd {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Kolom pertama dengan 1 bagian dan kolom kedua dengan 2 bagian */
+    grid-gap: 10px;
+}
+
+.about {
+    text-align: left;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 100px;
+    font-size: 17px;
+    background-clip: wheat;
+    background-color: khaki;
+    padding: 20px;
+}
+
+
+.fasst {
+    text-align: left;
+    margin-right: 150px;
+    margin-left: 200px;
+    margin-top: 100px;
+    font-size: 17px;
+    background-color: orange;
+    background-clip: wheat;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: -2px;
+}
+
+
+
+
+.card {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 330px;
+    height: 380px;
+    background: orange;
+    padding: .4em;
+    border-radius: 6px;
+    margin-top: 50px;
+    box-shadow: 10px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: transform;
+    transition-duration: 0.5s;
+    transform: scale(0.5);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: crosshair;
+
+}
+
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.card-image {
+    background-image: url(avatar1.png);
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+}
+
+.card-image:hover {
+    transform: scale(0.98);
+}
+
+
+.cardd-image {
+    background-image: url(aman.png);
+    background-size: 280px 218px;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+}
+
+.cardd-image:hover {
+    transform: scale(0.98);
+}
+
+
+.carddd-image {
+    background-image: url(nyaman.jpg);
+    background-size: 280px 210px;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+}
+
+.carddd-image:hover {
+    transform: scale(0.98);
+}
+
+
+.carrd-image {
+    background-image: url(bersih.png);
+    background-size: 280px 210px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+    background-color: white;
+}
+
+.carrd-image:hover {
+    transform: scale(0.98);
+}
+
+.carrrd-image {
+    background-image: url(murah.jpg);
+    background-size: 320px 220px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+    background-color: white;
+}
+
+.carrrd-image:hover {
+    transform: scale(0.98);
+}
+
+.caard-image {
+    background-image: url(jarak.png);
+    background-size: 320px 220px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+    background-color: white;
+}
+
+.caard-image:hover {
+    transform: scale(0.98);
+}
+
+.category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+}
+
+.category:hover {
+    cursor: pointer;
+}
+
+.headingg {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+}
+
+.heading:hover {
+    cursor: pointer;
+}
+
+.author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.name:hover {
+    cursor: pointer;
+}
+
+.grid-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Kolom pertama dengan 1 bagian dan kolom kedua dengan 2 bagian */
+    grid-gap: 20px;
+    /* Jarak antara kolom */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+section {
+    margin-top: 20px;
+}
+
+
+
+.kamar {
+    position: relative;
+}
+
+.card2 {
+    position: relative;
+    width: 18.875em;
+    height: 23.5em;
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: orange;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 2px 2px 2px rgba(109, 108, 106, 0.129);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+.card2::after {
+    content: "Add to Cart";
+    padding-top: 1.25em;
+    padding-left: 1.25em;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    background: #00AC7C;
+    color: #fff;
+    height: 2.5em;
+    width: 90%;
+    transition: all 80ms;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+.card2 .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    text-align: center;
+    bottom: 1.875em;
+    font-weight: 400;
+    color: #000;
+}
+
+.card2 .price {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 0.625em;
+    color: #000;
+    text-align: center;
+}
+
+.card2:hover::after {
+    bottom: 0;
+    opacity: 1;
+}
+
+.card2:active {
+    transform: scale(0.98);
+}
+
+.card2:active::after {
+    content: "Added !";
+    height: 3.125em;
+}
+
+.text {
+    max-width: 55px;
+}
+
+.images {
+    background-image: url(foto\ kasur\ kita.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.imagess {
+    background-image: url(foto\ lemari\ 1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.imagesss {
+    background-image: url(meja\ 1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.imagees {
+    background-image: url(westafel.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.imageees {
+    background-image: url(balkonn.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.imageeees {
+    background-image: url(kamar\ asrama.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.iimages {
+    background-image: url(foto\ wc.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.iiimages {
+    background-image: url(shower.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.iiiimages {
+    background-image: url(emberr.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.grid-fasilitas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Kolom pertama dengan 1 bagian dan kolom kedua dengan 2 bagian */
+    grid-gap: 10px;
+    /* Jarak antara kolom */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.grid-oke {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    /* Kolom pertama dengan 1 bagian dan kolom kedua dengan 2 bagian */
+    grid-gap: 10px;
+    /* Jarak antara kolom */
+
+}
+
+.column2 p {
+    margin-left: 10px;
+}
+
+.heading-about {
+    text-align: center;
+}
+
+.containerr {
+    position: relative;
+    height: 300px;
+    width: 250px;
+    background: orange;
+    padding: 2rem;
+    border-radius: 8px;
+    transition: all .25s ease-in-out;
+}
+
+.containerr:hover {
+    box-shadow: 0 4px 50px #00000020;
+}
+
+.containerr:hover .card3 {
+    transform: translateY(-5%);
+}
+
+.info {
+    margin-top: 1rem;
+}
+
+.info h2,
+p {
+    color: black;
+    text-align: center;
+}
+
+.card3 {
+    transition: all .25s ease-in-out;
+}
+
+.card3 input {
+    display: none;
+}
+
+.card3 main {
+    position: relative;
+}
+
+.card3 main a svg {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid orange;
+}
+
+.card3 main a {
+    position: relative;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-image: linear-gradient(to right, rgb(23, 122, 250) 20%, rgb(3, 240, 209));
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+.card3 main a:hover::after {
+    opacity: 1;
+}
+
+.card3 main a::after {
+    content: "Change";
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    left: 0px;
+    bottom: 0px;
+    background-image: linear-gradient(transparent 0%, rgba(108, 35, 192, 0.584) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: all 0.2s ease-in-out 0s;
+    padding-bottom: 1rem;
+}
+
+.card3 span {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: rgb(119, 255, 170);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid rgb(108, 35, 192);
+    color: rgb(108, 35, 192);
+}
+
+
+.containerr:hover .card4 {
+    transform: translateY(-5%);
+}
+
+
+.card4 {
+    transition: all .25s ease-in-out;
+}
+
+.card4 input {
+    display: none;
+}
+
+.card4 main {
+    position: relative;
+}
+
+.card4 main a svg {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid rgb(108, 35, 192);
+}
+
+.card4 main a {
+    position: relative;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-image: linear-gradient(to right, rgb(23, 122, 250) 20%, rgb(3, 240, 209));
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+.card4 main a:hover::after {
+    opacity: 1;
+}
+
+.card4 main a::after {
+    content: "Change";
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    left: 0px;
+    bottom: 0px;
+    background-image: linear-gradient(transparent 0%, rgba(108, 35, 192, 0.584) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: all 0.2s ease-in-out 0s;
+    padding-bottom: 1rem;
+}
+
+.card4 span {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: rgb(119, 255, 170);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid rgb(108, 35, 192);
+    color: rgb(108, 35, 192);
+}
+
+
+.containerr:hover .card5 {
+    transform: translateY(-5%);
+}
+
+.card5 {
+    transition: all .25s ease-in-out;
+}
+
+.card5 input {
+    display: none;
+}
+
+.card5 main {
+    position: relative;
+}
+
+.card5 main a svg {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid rgb(108, 35, 192);
+}
+
+.card5 main a {
+    position: relative;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-image: linear-gradient(to right, rgb(23, 122, 250) 20%, rgb(3, 240, 209));
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+.card5 main a:hover::after {
+    opacity: 1;
+}
+
+.card5 main a::after {
+    content: "Change";
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    left: 0px;
+    bottom: 0px;
+    background-image: linear-gradient(transparent 0%, rgba(108, 35, 192, 0.584) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: all 0.2s ease-in-out 0s;
+    padding-bottom: 1rem;
+}
+
+.card5 span {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: rgb(119, 255, 170);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid rgb(108, 35, 192);
+    color: rgb(108, 35, 192);
+}
+
+.grid-foto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Kolom pertama dengan 1 bagian dan kolom kedua dengan 2 bagian */
+    grid-gap: 2px;
+    /* Jarak antara kolom */
+    margin-left: 100px;
+}
+
+#avatar-preview {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+.sframe {
+    align-items: center;
+    justify-content: center;
+}
+
+.frame {
+    width: 100%;
+    height: 500px;
+    border: 5px solid white;
+    margin-top: 50px;
+
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #003152;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #00233b;
+}
+
+.footer-clean {
+    padding: 50px 0;
+    background-color: #002358;
+    color: white;
+}
+
+.footer-clean h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-clean ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-clean ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-clean ul a:hover {
+    opacity: 1;
+}
+
+.footer-clean .item.social {
+    text-align: right;
+}
+
+@media (max-width:767px) {
+    .footer-clean .item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-clean .item.social {
+        text-align: center;
+    }
+}
+
+.footer-clean .item.social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-clean .item.social>a:hover {
+    opacity: 0.9;
+}
+
+@media (max-width:991px) {
+    .footer-clean .item.social>a {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width:767px) {
+    .footer-clean .item.social>a {
+        margin-top: 10px;
+    }
+}
+
+.footer-clean .copyright {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 13px;
+    opacity: 0.6;
+    color: white;
+    margin-left: 70px;
+}

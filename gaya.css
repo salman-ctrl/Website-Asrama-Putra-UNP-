@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0px;
+    size: 12px;
+
+}
+
+header,
+div>div,
+footer {
+    widht: 100;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background: #9d814c;
+    position: relative;
+    font-size: 40px;
+    font-weight: bolder;
+    /* memastikan posisi foto relatif terhadap header */
+}
+
+.logo-kiri {
+    position: absolute;
+    /* membuat posisi foto absolut */
+    top: 0;
+    /* jarak dari atas */
+    left: 0;
+    /* jarak dari kiri */
+    height: 100px;
+    width: 100px;
+    padding-left: 10px;
+    display: flex;
+}
+
+.logo-kanan {
+    position: absolute;
+    /* membuat posisi foto absolut */
+    top: 0;
+    /* jarak dari atas */
+    right: 0;
+    /* jarak dari kanan */
+    height: 100px;
+    width: 100px;
+    padding-right: 5px;
+    display: flex;
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background: #FFC75F;
+}
+
+.container {
+    overflow: hidden;
+    width: 98%;
+    margin: auto;
+}
+
+.nav a:hover {
+    opacity: 0.8;
+}
+
+.nav a i {
+    color: purple;
+}
+
+.navigation li {
+    float: left;
+    display: block;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.form {
+    float: right;
+}
+
+
+
+main {
+    width: 80%;
+    height: 550px;
+    background: rgb(224, 224, 178);
+    font-family: Georgia, 'Times New Roman', ;
+    position: relative;
+    overflow: auto;
+
+}
+
+
+aside {
+    width: 25%;
+    height: 550px;
+    background: #FFC75F;
+    font-family: 'Times New Roman';
+    position: relative;
+
+}
+
+
+div>div {
+    width: 25%;
+    height: 550px;
+    background: #FFC75F;
+
+
+}
+
+.container {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.header {
+    border: 2px;
+    background: rgb(29, 95, 188);
+    color: white;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.header .logo {
+    float: left;
+    font-size: 32px;
+}
+
+.header .login {
+    float: right;
+    margin-top: 50px;
+
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background: #FFC75F;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    display: block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #555;
+}
+
+.social-icons a:hover {
+    color: #4267B2;
+    /* Facebook */
+}
+
+
+
+.social-icons a:last-child {
+    margin-right: 0;
+}
